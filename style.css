@@ -12,24 +12,28 @@
     src: url('assets/Super Magic.ttf') format('truetype');
 }
 
+body {
+    background-color: #891819;
+    margin: 0;
+}
+
 header {
     font-family: 'buyCat', sans-serif;
     font-size: 32px;
 }
 
-
-
 article {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
-.backgroundRoxo {
-    max-width: auto;
+.backgroundRoxo svg {
+    width: 100;
     height: auto;
-  }
+    display: block
+}
 
 .backgroundVerde {
     max-width: auto;
