@@ -41,34 +41,94 @@ h1 {
     overflow-x: hidden;
 }
 
-#parallax {
-    transform-style: preserve-3d;
-    height: 120vh;
-}
-
-.keyart_layer {
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: repeat-x;
+/*
+.parallaxContainer {
+    position: relative;
+    height: 100vh;
+  }
+.parallaxVermelho{
+    background-image: url('assets/BackgroundVermelho.png');
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1; 
+}
+.foreground {
+    position: relative;
+    height: 100%;
+    z-index: 2; 
+}
+.parallaxRoxo, ..parallaxVerde {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh; 
 }
 
-#keyart-0 {
+.parallaxRoxo{
+    background-image: url('assets/Backgroundroxo.png');
+    z-index: 3; 
+}
+.parallaxVerde{
     background-image: url('assets/BackgroundVerde.png');
-    background-color: #ffaf1b;
-    transform: translate3d(-11px, -46px, -1.3px) scale(2.3);
+    z-index: 4; 
 }
+*/
+body {
+    margin: 0;
+  }
+ 
+  .wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+  
+  .wrapper {
+    transform: translateZ(0px) scale(2);
+  }
+  
+  .foreground, section {
+    transform: translateZ(1px) scale(1);
+    top:500px
+  }
+  
+  .background, h1{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .foreground {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .title {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;;
+  }
+  
+  section {
+    font-size: 2rem;
+    padding: 2rem;
 
-#keyart-1 {
-    background-image: url('assets/BackgroundRoxo.png');
-    transform: translate3d(0, -47px, -.7px) scale(1.7);
-}
-
-#keyart-2 {
-    background-image: url('assets/BackgroundVermelho.png');
-    transform: translate3d(0, -98px, -.4px) scale(1.6);
-}
+    color: white;
+  }
