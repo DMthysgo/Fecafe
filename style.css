@@ -12,11 +12,6 @@
     src: url('assets/Super Magic.ttf') format('truetype');
 }
 
-body {
-    background-color: #891819;
-    margin: 0;
-}
-
 header {
     font-family: 'buyCat', sans-serif;
     font-size: 32px;
@@ -28,19 +23,52 @@ article {
     font-style: normal;
 }
 
-
-.backgroundRoxo svg {
-    width: 100;
-    height: auto;
-    display: block
+body {
+    margin: 0;
+    font-family: Helvetica, Sans-serif;
+    overflow-x: hidden;
 }
 
-.backgroundVerde {
-    max-width: auto;
-    height: auto;
+h1 {
+    text-align: center;
 }
 
-.chaveiro {
-    max-width: auto;
-    height: auto;
+.page {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    perspective-origin: center center;
+    overflow-x: hidden;
+}
+
+#parallax {
+    transform-style: preserve-3d;
+    height: 120vh;
+}
+
+.keyart_layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#keyart-0 {
+    background-image: url('assets/BackgroundVerde.png');
+    background-color: #ffaf1b;
+    transform: translate3d(-11px, -46px, -1.3px) scale(2.3);
+}
+
+#keyart-1 {
+    background-image: url('assets/BackgroundRoxo.png');
+    transform: translate3d(0, -47px, -.7px) scale(1.7);
+}
+
+#keyart-2 {
+    background-image: url('assets/BackgroundVermelho.png');
+    transform: translate3d(0, -98px, -.4px) scale(1.6);
 }
