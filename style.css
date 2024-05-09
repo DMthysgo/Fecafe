@@ -27,38 +27,39 @@ article {
 
 
 .roxo{
-    /* roxo */
+/* roxo */
 
-    position: absolute;
-    width: 4744px;
-    height: 5921px;
-    left: -389px;
-    top: 1756px;
+position: absolute;
+width: 4098.65px;
+height: 5933px;
+left: -2.65px;
+top: 1744px;
 
-    background: #352B58;
-
-
-    /* Line 1 */
-
-    position: absolute;
-    width: 2741.12px;
-    height: 0px;
-    left: 63px;
-    top: 2037px;
-
-    border: 5px solid #FFFFFF;
-    transform: rotate(16.88deg);
+background: #352B58;
 
 
-    /* Line 2 */
+/* Line 2 */
 
-    position: absolute;
-    width: 1266.88px;
-    height: 0px;
-    left: 2843px;
-    top: 2674px;
+position: absolute;
+width: 1117.16px;
+height: 0px;
+left: 2766.94px;
+top: 2674px;
 
-    border: 5px solid #FFFFFF;
-    transform: rotate(-8.49deg);
+border: 5px solid #FFFFFF;
+transform: matrix(0.99, -0.17, 0.13, 0.99, 0, 0);
+
+
+/* Line 1 */
+
+position: absolute;
+width: 2439.17px;
+height: 0px;
+left: 323.31px;
+top: 2037px;
+
+border: 5px solid #FFFFFF;
+transform: matrix(0.95, 0.33, -0.26, 0.97, 0, 0);
+
 
 }
