@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'buyCat';
+    src: url('assets/Buycat.ttf') format('truetype');
+}
+
+.buyCat {
+    font-family: 'buyCat', sans-serif;
+}
+
+@font-face {
+    font-family: 'superMagic';
+    src: url('assets/Super Magic.ttf') format('truetype');
+}
+
+header {
+    font-family: 'buyCat', sans-serif;
+    font-size: 32px;
+}
+
+
+
+article {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
