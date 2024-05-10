@@ -12,77 +12,71 @@
     src: url('assets/Super Magic.ttf') format('truetype');
 }
 
-header {
+h1 {
     font-family: 'buyCat', sans-serif;
     font-size: 32px;
+    font-size: 8vw;
 }
 
-article {
+p {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 5vw;
 }
 
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
+    background-color: #ffffff;
 }
 
-.parallax {
-    display: grid;
-    grid-template-areas: "stack";
+.section1 {
+    display: flex;
+    width: 100%;
+    background-image: url('assets/BackgroundVermelho.png');
+    background-size: 100% 100%;
 }
 
-.parallax>* {
-    grid-area: stack;
-    animation: parallax linear;
-    animation-timeline: scroll();
-}
-
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        display: block;
-        grid-template-areas: none;
-    }
-
-    .parallax>* {
-        grid-area: stack;
-        animation: parallax linear;
-        animation-timeline: scroll();
-    }
-}
-
-.roxo {
+.interno {
     position: absolute;
-    top: 300px;
-    z-index: 1;
-    --parallax-speed: -5;
+    display: flex;
 }
 
-.verde {
-    position: absolute;
-    top: 1000px;
-    z-index: 2;
-    --parallax-speed: -2;
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 
-@keyframes parallax {
-    to {
-        transform: translateY(calc(var(--parallax-speed)*200px));
-    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.texto1 {
-    position: relative;
-    top: 400px;
-    color: rgb(255, 255, 255);
+li {
+    float: left;
+    border-left: 1px solid #bbb;
 }
 
-.fixed {
-    position: fixed;
-    top: -400px;
-    --parallax-speed: 0;
-    /* Ajuste a altura desejada */
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
 }
