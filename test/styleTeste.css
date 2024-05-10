@@ -1,0 +1,144 @@
+body {
+  color: #252525;
+  font-family: "Mada", sans-serif;
+  overflow-x: hidden;
+  margin: 0%;
+}
+
+@font-face {
+  font-family: "buyCat";
+  src: url("../assets/Buycat.ttf") format("truetype");
+}
+
+.buyCat {
+  font-family: "buyCat", sans-serif;
+}
+
+@font-face {
+  font-family: "superMagic";
+  src: url("../assets/Super Magic.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "buyCat", sans-serif;
+}
+
+p {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #48d8a4;
+  margin: 0;
+  padding: 100px 0 50px 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5% 4% 5% 4%;
+}
+
+.container-outer {
+  width: 100%;
+  position: relative;
+}
+
+section.sec2 {
+  background-color: #f6e6e0;
+  padding-bottom: 100px;
+}
+
+/* DIVISORIAS */
+
+.angle {
+  position: relative;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
+.angle1,
+.angle1:after {
+  height: 80px;
+  width: 100%;
+}
+
+.angle1 {
+  background-color: #f6e6e0;
+}
+
+.angle1:after {
+  background-color: #48d8a4;
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
+  clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 50% 100%, 75% 50%);
+}
+
+/* MENU */
+
+ul.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.navBar > li {
+  float: left;
+  border-left: 1px solid #bbb;
+}
+
+ul.navBar > li:last-child {
+  border-right: none;
+}
+
+ul.navBar > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navBar > li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.navBar > li > a.active {
+  background-color: #04aa6d;
+}
+
+/* AJUSTES DE MEDIA */
+
+@media (min-width: 600px) {
+  header {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 520px) {
+  .angle1,
+  .angle1:after {
+    height: 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  .angle1,
+  .angle1:after {
+    height: 160px;
+  }
+}
